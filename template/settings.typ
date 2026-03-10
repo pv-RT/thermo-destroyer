@@ -1,0 +1,46 @@
+// DEFINE COLORS
+#let KIT_GREEN = rgb("#009682")
+#let COOL_BLUE = rgb("#2163a0")
+
+// SIZES AND SPACINGS 
+// DONT MESS THEM UP!
+#let FONT_SIZE = 2.3mm
+#let PAGE_MARGIN = 3mm
+#let COLUMN_GUTTER = .7mm
+
+#let HEADER_SPACING = PAGE_MARGIN
+#let HEADER_INSET = PAGE_MARGIN / 5
+
+#let SECTION_SPACING = 1.5mm
+#let SECTION_HEADING_RISE = .8mm
+#let SECTION_HEADING_FONT_SIZE = .75em // 2mm  // .8em
+
+#let BLOCK_HEADING_FONT_SIZE = .95em
+#let BLOCK_SPACING = COLUMN_GUTTER
+#let BLOCK_INSET = 1mm // * 1.5
+#let BLOCK_BORDER_RADIUS = .4mm
+
+
+
+// TWEAKS
+// CHANGE ANYTHING YOU WANT HERE
+
+// easy settings
+#let ENABLE_HEADER = false
+#let ENABLE_FOOTER = false
+#let ENABLE_HIGHLIGHTS = false
+#let KIT_PRINT_MODE = true  // margins optimized for KIT SCC printer
+
+#let SHOW_EASY_STUFF = false
+
+// advanced settings
+#let SECTION_HEADING_FILL = COOL_BLUE
+#let BLOCK_HEADING_FILL = black
+#let BLOCK_FILL = rgb("#f2f5f8")
+#let BLOCK_STROKE_PAINT = luma(104)
+
+// expert settings
+#let BOXHIGHLIGHT_STROKE_TRANSPARENCY = 10%
+#let BOXHIGHLIGHT_FILL_TRANSPARENCY = 80%
+#let MARK_FILL_TRANSPARENCY = 50%
+#let BMARK_STROKE_TRANSPARENCY = 10%

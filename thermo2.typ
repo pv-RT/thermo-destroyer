@@ -5,6 +5,13 @@
 
 #show: destroyer_layout
 
+#set document(
+  title: "Thermo II Destroyer KIT SPO 2023",
+  author: "pv-RT - https://github.com/pv-RT/thermo-destroyer",
+  description: "Technische Thermodynamik und Wärmeübertragung II Formelsammung KIT SPO 2023",
+  keywords: ("KIT", "TD2"),
+)
+
 == Thermo II Destroyer KIT SPO 2023
 #v(.5em)
 

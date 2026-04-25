@@ -12,6 +12,13 @@
 
 #let SHOW_EASY_STUFF = true
 
+#set document(
+  title: "Thermo I Destroyer KIT SPO 2023",
+  author: "pv-RT - https://github.com/pv-RT/thermo-destroyer",
+  description: "Technische Thermodynamik und Wärmeübertragung I Formelsammung KIT SPO 2023",
+  keywords: ("KIT", "TD1"),
+)
+
 == Thermo I Destroyer KIT SPO 2023
 #v(.5em)
 

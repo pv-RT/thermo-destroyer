@@ -143,34 +143,6 @@
   lines
 }
 
-// #let imagetwins(..images) = context {
-//   let imgs = images.pos()
-//   let numImgs = imgs.len()
-//   if not calc.rem(numImgs, 2) == 0 {
-//     panic("imagetwins accenpts only a an even number of images")
-//   }
-
-//   let sized
-
-//   for  i in range(numImgs, 2) {
-//     let img1 = imgs[i]
-//     let img2 = imgs[i+1]
-//     let h1 = measure(img1, height: 20pt).height
-//     let h2 = measure(img2, height: 20pt).height
-
-//     let h = (h1 + h2) / 2
-    
-//     let w1 = measure(img1, height: h).width
-//     let w2 = measure(img2, height: h).width
-//   }
-
-//   grid(
-//     columns: (w1/(w1+w2)*1fr, w2/(w1+w2)*1fr),
-//     img1,
-//     img2,
-//   )
-// }
-
 #let imagetwins(img1, img2) = context {
   let h1 = measure(img1, height: 20pt).height
   let h2 = measure(img2, height: 20pt).height
@@ -185,17 +157,5 @@
     columns: (w1/(w1+w2)*1fr, w2/(w1+w2)*1fr),
     img1,
     img2,
-  )
-}
-
-#let strike(color: red, content) = context{
-  let mes = measure(content)
-  let l = 0.5 * mes.width + mes.height * 1.3
-  content
-  place(
-    left + bottom,
-    dx: -(mes.width + l) / 2 ,
-    dy: mes.height / 2 + 0.1 * l,
-    line(angle: -30deg, stroke: stroke(paint: color, thickness: .7pt, cap: "round"), length: l)
   )
 }

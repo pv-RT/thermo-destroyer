@@ -352,38 +352,7 @@
   #v(.2em)
 ]
 
-#section("Evakuierte Flasche")[
-  #grid(
-    columns: (1fr, 2fr),
-    gutter: .2em,
-  )[
-    #image("res/diagrams/evakuierte-flasche.png")
-    #place($dot(m)$, right + horizon, dx: -.3em, dy: -.6em)
-    #place("KV", right, dy: -1em, dx: -.2em)
-  ][
-    #set align(horizon + center)
-    $strike(sum dot(W)) + strike(sum dot(Q)) + sum dot(m) (h + c^2 / 2 + strike(g z)) \ = dif / (dif tau) sum m (u + e_italic("kin") + strike(e_italic("pot")))$
-  ]
-  #v(0em, weak: true)
-  #grid(
-    columns: (1fr, 2fr),
-    gutter: .2em,
-  )[
-    #image("res/diagrams/evakuierte-flasche-luft.png")
-  ][
-    #set align(center + horizon)
-    $strike(delta q) + strike(delta w) = dif h + c dif c + strike(g dif z)$ \
-    $-> h_"ein" + c_"ein"^2 / 2 strike(- c_"u"^2 / 2) = h_"u" = italic("konst")$
-  ]
-  #v(.1em, weak: true)
-  $ -> dot(m)(h_"ein" + c_"ein"^2 / 2) = frac(dif, dif tau)[m(u + e_italic("kin"))] wide | integral_(tau_1)^tau_2 dif tau \
-  m_"ein" h_"u" = m_2 (u_2 + strike(e_(italic("kin"),2))) - strike(m_1)(u_1 + e_(italic("kin"),1)); quad m_2 = m_"ein" \
-  -> h_"u" = u_2 wide "mit" h_"u" = u_"u" + (p v)_"u" = u_"u" + R T_"u" \
-  u_2 - u_"u" = Delta u = R T_"u" wide Delta u = c_v (T_2 - T_"u") \
-  => c_v (T_2 - T_"u") = R T_"u" => c_v T_2 = (R + c_v) T_"u" = c_p T_"u" \
-  => T_2 = kappa T_"u"
-  $
-]
+#flasche
 
 #section("hx+1 - Diagramm")[
   #image("res/diagrams/hx+1.png", width: 30em)

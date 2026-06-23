@@ -29,8 +29,8 @@
   #v(.2em, weak: true)
   Van-der-Waals-Gleichung: #box(height: 1.2em)[$ lrmid((p + a / v^2) (v - b)) = R T $] \
   ideales Gas (Massenpunktgas ohne Anziehende WW): $a = b = 0$ \
-  Massenpunktgas mit anziehender WW: $a = 0, space b != 0$ \
-  Starrkugelgas ohne anziehende WW: $a != 0, space b = 0$ \
+  Massenpunktgas mit anziehender WW: $a != 0, space b = 0 -> (p + a/v^2) v = R T$ \
+  Starrkugelgas ohne anziehende WW: $a = 0, space b != 0 -> p (v - b) = R T$ \
   Van-der-Waals-Gas: $a != 0, space b != 0$ #h(1em) und #h(1em)
   $(frac(partial u, partial v))_T = a / v^2 $ #h(1em)
   $(frac(partial p, partial T))_v = frac(R, v -b )$ \

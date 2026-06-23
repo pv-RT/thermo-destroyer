@@ -132,15 +132,11 @@
 }
 
 #let barred(body, block: true) = context {
-  let lines = std.block({
-    show math.equation: set align(start)
-    math.equation(block: block, body)
-  })
-  let height = measure(lines).height
+  let height = measure(body).height
   h(.2em)
   math.stretch(math.bar.v, size: height + 1em)
   h(1em)
-  lines
+  body
 }
 
 #let imagetwins(img1, img2) = context {
@@ -148,7 +144,7 @@
   let h2 = measure(img2, height: 20pt).height
 
   let h = (h1 + h2) / 2
-  
+
   let w1 = measure(img1, height: h).width
   let w2 = measure(img2, height: h).width
 
